@@ -1,6 +1,13 @@
-main-color = #fd0215
-important-color = #fd0215
+main-color = #4aa7fe
+important-color = #385b7b
 gray-color = #4a4a4a
+
+@font-face {
+  font-family: 'YS Display';
+  font-style: normal;
+  font-weight: 700;
+  src: local('YS Display Bold'), local('YSDisplay-Bold'), url(./fonts/YS Display-Bold.woff2) format('woff2');
+}
 
 @font-face {
   font-family: 'Amatic SC';
@@ -30,12 +37,12 @@ gray-color = #4a4a4a
     border-radius: 50%
 
 .slide
-    padding-top: 75px
+    padding-top: 55px
     &.right
         padding-left: 550px
     h2
-        color #830000
-        font-family: 'Amatic SC', sans-serif;
+        color #000000
+        font-family: 'YS Display', sans-serif;
     .subtitle
         font-family: 'Amatic SC', sans-serif;
         background-color: #ddd
@@ -139,9 +146,12 @@ gray-color = #4a4a4a
         h2
             display inline-block
             padding 10px 30px
-            background-color main-color
-            color #fff
-            border-radius: 100px
+            border 10px solid red
+            border-image: linear-gradient(to right, #e3cbf1, #9ddaff) 1;
+            background-color #fff
+            color #000
+            border-radius: 30px
+            font-size: 3rem;
             &.shout
                 width 800px
                 padding-top 20px
@@ -152,16 +162,19 @@ gray-color = #4a4a4a
         &.captain
             h2
                 margin: 0;
-                margin-top: -100px;
-                width: 100%;
-                padding: 30px 0;
+                margin-top: -115px;
+                width: 105%;
+                padding: 30px 20px;
                 border-radius: 0;
                 position relative
                 font-size: 60px;
-                height: 180px;
+                height: 230px;
                 align-items: center;
                 justify-content: center;
                 display: flex;
+                background-color: main-color;
+                border: none;
+                font-size: 3.5rem;
                 &::after
                     content: ''
                     background-color: main-color
@@ -175,10 +188,12 @@ gray-color = #4a4a4a
                     z-index -1
         .captain-text
             position: absolute;
-            bottom: 15%;
+            bottom: 20%;
             text-align: center;
             width: 100%;
             left: 0;
+            &.special
+                bottom: 15%;
     &.capture
         h2
             &.shout
@@ -316,7 +331,7 @@ mh = 25px
             color #5ed7ff
 
 .shower.list .slide.active
-    box-shadow: 0 0 0 1px main-color, 0 0 0 20px #fd0215, 0 20px 50px rgba(0,0,0,.3)
+    box-shadow: 0 0 0 1px main-color, 0 0 0 20px main-color, 0 20px 50px rgba(0,0,0,.3)
 
 .slide.no-number::after
     visibility: hidden
