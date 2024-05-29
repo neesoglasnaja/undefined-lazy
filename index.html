@@ -40,9 +40,9 @@
     <section id="" style="" class="slide  label-header">
       <h2>Перед началом работы</h2>
       <ul>
-        <li>Обсуждение макетов ДО разработки<img src="pictures/halfs/comment.jpg" class="cover"/>
+        <li>Обсуждение макетов <b>до</b> разработки<img src="pictures/halfs/comment.jpg" class="cover"/>
         </li>
-        <li class="next">Просить UI Kit<img src="pictures/halfs/ui-kit.jpg" class="cover"/>
+        <li class="next">Просить UI Kit / дизайн систему<img src="pictures/halfs/ui-kit.jpg" class="cover"/>
           <ul class="next">
             <li>(!) Элементы отрисованы для всех версий</li>
             <li>Шрифты и типографика</li>
@@ -135,8 +135,8 @@
       <h2>1. Вёрстка: чек-лист</h2>
       <ul>
         <li>Выглядит как на макете во всех разрешениях</li>
-        <li class="next">Не ломается при изменении ширины И ВЫСОТЫ</li>
-        <li class="next">Проверить ВСЕ вхождения</li>
+        <li class="next">Не ломается при изменении ширины <b>и высоты</b></li>
+        <li class="next">Проверить <b>все</b> вхождения</li>
         <li class="next">Тянется/обрезается при разном контенте</li>
       </ul><img src="pictures/halfs/check.jpg" class="cover"/>
     </section>
@@ -165,7 +165,7 @@
       <ul>
         <li>Работает как задумано</li>
         <li class="next">Интерактивность на ховеры</li>
-        <li class="next">Не ломается/обрезается ВНЕЗАПНО</li>
+        <li class="next">Не ломается/обрезается <b>внезапно</b></li>
         <li class="next">Нет ошибок в DevTools</li>
         <li class="next">Интерфейс не зависает и не тормозит</li>
       </ul><img src="pictures/halfs/check.jpg" class="cover"/>
@@ -245,11 +245,13 @@
     <section id="" style="" class="slide  label-header">
       <h2>Как отлаживать на девайсах</h2>
       <ul>
-        <li><a href="https://ngrok.com/">Ngrok</a> - показать удаленно</li>
         <li><a href="https://developers.google.com/web/tools/chrome-devtools/remote-debugging/">DevTools Chrome под Android</a></li>
         <li><a href="https://appletoolbox.com/2014/05/use-web-inspector-debug-mobile-safari/">Мобильный Safari на macOS</a></li>
         <li><a href="https://washamdev.com/debug-a-website-in-ios-safari-on-windows/">Мобильный Safari под Windows и Linux</a></li>
-        <li><a href="https://www.browserstack.com/">BrowserStack</a> для теста кроссбраузерности</li>
+      </ul>
+      <ul style="opacity: 0.5">
+        <li><a href="https://ngrok.com/">Ngrok</a> &mdash; показать удаленно</li>
+        <li><a href="https://www.browserstack.com/">BrowserStack</a> &mdash; для теста кроссбраузерности</li>
       </ul>
     </section>
     <section id="" style="" class="slide  label-header captain">
@@ -272,6 +274,99 @@
       </ul><img src="pictures/halfs/smoke.jpg" class="cover"/>
     </section>
     <section id="" style="" class="slide  label-header">
+      <h2 class=" shout">Автотесты</h2><img src="pictures/cover-blur.jpg" class="cover width">
+    </section>
+    <section id="" style="" class="slide">
+      <h2 style="color: white; font-size: 80px; left: 47%; width: 50%; text-align: left; top: 30%" class="shout">Почему мы не&nbsp;пишем тесты?</h2><img src="pictures/philosoraptor.jpg" class="cover width">
+    </section>
+    <section id="" style="" class="slide  label-header">
+      <h2>Почему мы не&nbsp;пишем тесты</h2>
+      <ul class="say">
+        <li>«Cложно»<img src="pictures/complicated.jpg" class="cover width"></li>
+      </ul>
+    </section>
+    <section id="" style="" class="slide"><img src="pictures/jest.jpg" class="cover width">
+    </section>
+    <section id="" style="" class="slide  label-header">
+      <h2>Почему мы не&nbsp;пишем тесты</h2>
+      <ul class="say">
+        <li class="disabled">«Cложно»</li>
+        <li>«Дорого»<img src="pictures/expensive.jpg" class="cover width"></li>
+      </ul>
+    </section>
+    <section id="" style="" class="slide"><img src="pictures/dev-vs-qa.jpg" class="cover width"><img src="pictures/dev-vs-qa-10.jpg" class="cover width next"><img src="pictures/dev-vs-qa-100.jpg" class="cover width next"><img src="pictures/dev-vs-qa-boom.jpg" class="cover width next">
+    </section>
+    <section id="" style="" class="slide  label-header">
+      <h2>Почему мы не&nbsp;пишем тесты</h2>
+      <ul class="say">
+        <li class="disabled">«Cложно»</li>
+        <li class="disabled">«Дорого»</li>
+        <li>«Нет времени»<img src="pictures/time.jpg" class="cover width"></li>
+      </ul>
+    </section>
+    <section id="" style="" class="slide"><img src="pictures/dev-vs-qa.jpg" class="cover width"><img src="pictures/dev-vs-qa-boom.jpg" class="cover width next">
+    </section>
+    <section id="" style="" class="slide  label-header">
+      <h2>Почему мы не&nbsp;пишем тесты</h2>
+      <ul class="say">
+        <li class="disabled">«Cложно»</li>
+        <li class="disabled">«Дорого»</li>
+        <li class="disabled">«Нет времени»</li>
+        <li>«Нет подходящих инструментов»<img src="pictures/nothing.jpg" class="cover width"></li>
+      </ul>
+    </section>
+    <section id="" style="" class="slide"><img src="pictures/npm.jpg" class="cover width">
+    </section>
+    <section id="" style="" class="slide  label-header">
+      <h2>Почему мы не&nbsp;пишем тесты</h2>
+      <ul class="say">
+        <li class="disabled">«Cложно»</li>
+        <li class="disabled">«Дорого»</li>
+        <li class="disabled">«Нет времени»</li>
+        <li class="disabled">«Нет подходящих инструментов»</li>
+        <li>«Для больших проектов»<img src="pictures/cats.jpg" class="cover width"></li>
+      </ul>
+    </section>
+    <section id="" style="" class="slide"><img src="pictures/bugs.jpg" class="cover width">
+    </section>
+    <section id="" style="" class="slide  label-header">
+      <h2>Почему мы не&nbsp;пишем тесты</h2>
+      <ul class="say">
+        <li class="disabled">«Cложно»</li>
+        <li class="disabled">«Дорого»</li>
+        <li class="disabled">«Нет времени»</li>
+        <li class="disabled">«Нет подходящих инструментов»</li>
+        <li class="disabled">«Для больших проектов»</li>
+        <li>«Это не моя работа»<img src="pictures/not-my-job.jpg" class="cover width"><img src="pictures/wtf.png" class="cover width next"></li>
+      </ul>
+    </section>
+    <section id="" style="" class="slide  label-header">
+      <h2>Автоматизированное<br>тестирование</h2>
+      <ol>
+        <li>Линтеры и статические анализаторы<img src="pictures/linters.jpg" class="cover width"></li>
+        <li class="next">Модульное тестирование<img src="pictures/state-of.jpg" class="cover width"></li>
+        <li class="next">Тестирование вёрстки</li>
+        <li class="next">Высокоуровневые тесты</li>
+      </ol>
+    </section>
+    <section id="" style="" class="slide  label-header">
+      <h2>План-капкан</h2>
+      <ol>
+        <li>Внедрить линтеры и статические анализаторы<br><a href="https://youtu.be/gBgS5Fzhe5c">Как внедрить стандарты разработки (Youtube)</a><img src="pictures/odessajs.jpg" class="cover width"></li>
+        <li class="next">Найти части проекта, где чаще всего появляются баги<img src="pictures/tut.jpg" class="cover width"></li>
+        <li class="next">Выбрать подходящий инструмент/библиотеку<img src="pictures/state-of-2.jpg" class="cover width"></li>
+        <li class="next">Встроить автотесты в процесс сборки<img src="pictures/ci.jpg" class="cover width"></li>
+      </ol>
+    </section>
+    <section id="" style="" class="slide  label-header captain">
+      <h2 class=" shout">Тестирование &mdash; не страшно</h2>
+      <p class="captain-text"><span class="subtitle">И не так долго и дорого</span></p><img src="pictures/cap.jpg" class="cover width">
+    </section>
+    <section id="" style="" class="slide  label-header captain">
+      <h2 class=" shout">Дороже править однотипные&nbsp;баги</h2>
+      <p class="captain-text"><span class="subtitle">Чем написать автотест</span></p><img src="pictures/cap.jpg" class="cover width">
+    </section>
+    <section id="" style="" class="slide  label-header">
       <h2 class=" shout">А если нашел баг не там, где сейчас делаешь?</h2><img src="pictures/cover-blur.jpg" class="cover width">
     </section>
     <section id="" style="" class="slide  label-header captain">
@@ -291,19 +386,19 @@
     <section id="" style="" class="slide  label-header">
       <h2>Подводя итог</h2>
       <ul>
-        <li>Смотри на дизайн ПЕРЕД работой</li>
-        <li class="next">Проверяй за собой ПОСЛЕ работы</li>
+        <li>Смотри на дизайн <b>до</b> разработки</li>
+        <li class="next">Проверяй за собой <b>после</b> завершения работы</li>
         <li class="next">Не бойся обсуждать и вносить изменения в процессе</li>
         <li class="next">Будь ответственным, чёрт возьми!</li>
       </ul><img src="pictures/halfs/i-do.jpg" class="cover"/>
     </section>
     <section id="" style="" class="slide  label-header captain">
       <h2 class=" shout">Не будь ленивым кодером</h2>
-      <p class="captain-text next"><span class="subtitle">Будь котиком!</span></p><img src="pictures/cap.jpg" class="cover width">
+      <p class="captain-text next"><span class="subtitle">Будь котиком!</span><img src="pictures/coderun.png" style="position: absolute; bottom: -2px; left: 30%; width: 95px;"></p><img src="pictures/cap.jpg" class="cover width">
     </section>
     <section id="theend" style="" class="slide  cover label-header">
       <h2 class=" shout">Вопросы?</h2>
-      <p class="end-link"><a href="https://neesoglasnaja.github.io/undefined-lazy" target="_blank" class="bigger">neesoglasnaja.github.io/undefined-lazy</a><br>Александра Шинкевич (<a href="https://twitter.com/neesoglasnaja" target="_blank">@neesoglasnaja</a>)</p><img src="pictures/cover.jpg" class="cover"/>
+      <p class="end-link"><a href="https://neesoglasnaja.github.io/undefined-lazy" target="_blank" class="bigger">neesoglasnaja.github.io/undefined-lazy</a><br>Саша Шинкевич (<a href="https://twitter.com/neesoglasnaja" target="_blank">@neesoglasnaja</a>)</p><img src="pictures/cover.jpg" class="cover"/>
     </section>
     <div class="progress"></div>
     <script src="shower/shower.min.js"></script>

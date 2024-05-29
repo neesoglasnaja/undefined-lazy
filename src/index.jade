@@ -47,9 +47,9 @@ html(lang='ru')
       img.cover.width(src='pictures/cap-says.jpg')
     +slide({header: "Перед началом работы", classes: "label-header"})
       ul
-        li Обсуждение макетов ДО разработки
+        li Обсуждение макетов <b>до</b> разработки
           +cover('pictures/halfs/comment.jpg')
-        li.next Просить UI Kit
+        li.next Просить UI Kit / дизайн систему
           +cover('pictures/halfs/ui-kit.jpg')
           ul.next
             li (!) Элементы отрисованы для всех версий
@@ -128,8 +128,8 @@ html(lang='ru')
     +slide({header: "1. Вёрстка: чек-лист", classes: 'label-header'})
       ul
         li Выглядит как на макете во всех разрешениях
-        li.next Не ломается при изменении ширины И ВЫСОТЫ
-        li.next Проверить ВСЕ вхождения
+        li.next Не ломается при изменении ширины <b>и высоты</b>
+        li.next Проверить <b>все</b> вхождения
         li.next Тянется/обрезается при разном контенте
       +cover('pictures/halfs/check.jpg')
     +slide({header: "1. Вёрстка: чем проверять", classes: 'label-header'})
@@ -158,7 +158,7 @@ html(lang='ru')
       ul
         li Работает как задумано
         li.next Интерактивность на ховеры
-        li.next Не ломается/обрезается ВНЕЗАПНО
+        li.next Не ломается/обрезается <b>внезапно</b>
         li.next Нет ошибок в DevTools
         li.next Интерфейс не зависает и не тормозит
       +cover('pictures/halfs/check.jpg')
@@ -220,17 +220,18 @@ html(lang='ru')
     +slide({header: "Как отлаживать на девайсах", classes: "label-header"})
       ul
         li
-          a(href="https://ngrok.com/") Ngrok
-          |  - показать удаленно
-        li
           a(href="https://developers.google.com/web/tools/chrome-devtools/remote-debugging/") DevTools Chrome под Android
         li
           a(href="https://appletoolbox.com/2014/05/use-web-inspector-debug-mobile-safari/") Мобильный Safari на macOS
         li
           a(href="https://washamdev.com/debug-a-website-in-ios-safari-on-windows/") Мобильный Safari под Windows и Linux
+      ul(style="opacity: 0.5")
+        li
+          a(href="https://ngrok.com/") Ngrok
+          |  &mdash; показать удаленно
         li
           a(href="https://www.browserstack.com/") BrowserStack
-          |  для теста кроссбраузерности
+          |  &mdash; для теста кроссбраузерности
     +slide({header: "Ни один DevTools  не заменит реальный девайс", shout: true, classes: 'label-header captain'})
       img.cover.width(src='pictures/cap.jpg')
     +slide({header: "", shout: true, classes: 'label-header clear'})
@@ -247,6 +248,94 @@ html(lang='ru')
         li Нет ошибок в консоли и DevTools
         li Проверено в вечнозеленых мобильных и десктопах
       +cover('pictures/halfs/smoke.jpg')
+    +slide({header: "Автотесты", shout: true, classes: 'label-header'})
+      img.cover.width(src='pictures/cover-blur.jpg')
+    +slide({header: "", shout: false, classes: ''})
+      h2.shout(style="color: white; font-size: 80px; left: 47%; width: 50%; text-align: left; top: 30%") Почему мы не&nbsp;пишем тесты?
+      img.cover.width(src='pictures/philosoraptor.jpg')
+    +slide({header: "Почему мы не&nbsp;пишем тесты", classes: 'label-header'})
+      ul.say
+        li «Cложно»
+          img.cover.width(src='pictures/complicated.jpg')
+    +slide({header: "", shout: false, classes: ''})
+      img.cover.width(src='pictures/jest.jpg')
+    +slide({header: "Почему мы не&nbsp;пишем тесты", classes: 'label-header'})
+      ul.say
+        li.disabled «Cложно»
+        li «Дорого»
+          img.cover.width(src='pictures/expensive.jpg')
+    +slide({header: "", shout: false, classes: ''})
+      img.cover.width(src='pictures/dev-vs-qa.jpg')
+      img.cover.width.next(src='pictures/dev-vs-qa-10.jpg')
+      img.cover.width.next(src='pictures/dev-vs-qa-100.jpg')
+      img.cover.width.next(src='pictures/dev-vs-qa-boom.jpg')
+    +slide({header: "Почему мы не&nbsp;пишем тесты", classes: 'label-header'})
+      ul.say
+        li.disabled «Cложно»
+        li.disabled «Дорого»
+        li «Нет времени»
+          img.cover.width(src='pictures/time.jpg')
+    +slide({header: "", shout: false, classes: ''})
+      img.cover.width(src='pictures/dev-vs-qa.jpg')
+      img.cover.width.next(src='pictures/dev-vs-qa-boom.jpg')
+    +slide({header: "Почему мы не&nbsp;пишем тесты", classes: 'label-header'})
+      ul.say
+        li.disabled «Cложно»
+        li.disabled «Дорого»
+        li.disabled «Нет времени»
+        li «Нет подходящих инструментов»
+          img.cover.width(src='pictures/nothing.jpg')
+    +slide({header: "", shout: false, classes: ''})
+      img.cover.width(src='pictures/npm.jpg')
+    +slide({header: "Почему мы не&nbsp;пишем тесты", classes: 'label-header'})
+      ul.say
+        li.disabled «Cложно»
+        li.disabled «Дорого»
+        li.disabled «Нет времени»
+        li.disabled «Нет подходящих инструментов»
+        li «Для больших проектов»
+          img.cover.width(src='pictures/cats.jpg')
+    +slide({header: "", shout: false, classes: ''})
+      img.cover.width(src='pictures/bugs.jpg')
+    +slide({header: "Почему мы не&nbsp;пишем тесты", classes: 'label-header'})
+      ul.say
+        li.disabled «Cложно»
+        li.disabled «Дорого»
+        li.disabled «Нет времени»
+        li.disabled «Нет подходящих инструментов»
+        li.disabled «Для больших проектов»
+        li «Это не моя работа»
+          img.cover.width(src='pictures/not-my-job.jpg')
+          img.cover.width.next(src='pictures/wtf.png')
+    +slide({header: "Автоматизированное<br>тестирование", classes: 'label-header'})
+      ol
+        li Линтеры и статические анализаторы
+          img.cover.width(src='pictures/linters.jpg')
+        li.next Модульное тестирование
+          img.cover.width(src='pictures/state-of.jpg')
+        li.next Тестирование вёрстки
+        li.next Высокоуровневые тесты
+    +slide({header: "План-капкан", classes: 'label-header'})
+      ol
+        li Внедрить линтеры и статические анализаторы
+          br
+          a(href="https://youtu.be/gBgS5Fzhe5c") Как внедрить стандарты разработки (Youtube)
+          img.cover.width(src='pictures/odessajs.jpg')
+        li.next Найти части проекта, где чаще всего появляются баги
+          img.cover.width(src='pictures/tut.jpg')
+        li.next Выбрать подходящий инструмент/библиотеку
+          img.cover.width(src='pictures/state-of-2.jpg')
+        li.next Встроить автотесты в процесс сборки
+          img.cover.width(src='pictures/ci.jpg')
+      
+    +slide({header: "Тестирование &mdash; не страшно", shout: true, classes: 'label-header captain'})
+      p.captain-text
+        span.subtitle И не так долго и дорого
+      img.cover.width(src='pictures/cap.jpg')
+    +slide({header: "Дороже править однотипные&nbsp;баги", shout: true, classes: 'label-header captain'})
+      p.captain-text
+        span.subtitle Чем написать автотест
+      img.cover.width(src='pictures/cap.jpg')
     +slide({header: "А если нашел баг не там, где сейчас делаешь?", shout: true, classes: 'label-header'})
       img.cover.width(src='pictures/cover-blur.jpg')
     +slide({header: "Видишь баг &mdash; исправь", shout: true, classes: 'label-header captain'})
@@ -267,20 +356,21 @@ html(lang='ru')
       img.cover.width(src='pictures/cap.jpg')
     +slide({header: "Подводя итог", classes: "label-header"})
       ul
-        li Смотри на дизайн ПЕРЕД работой
-        li.next Проверяй за собой ПОСЛЕ работы
+        li Смотри на дизайн <b>до</b> разработки
+        li.next Проверяй за собой <b>после</b> завершения работы
         li.next Не бойся обсуждать и вносить изменения в процессе
         li.next Будь ответственным, чёрт возьми!
       +cover('pictures/halfs/i-do.jpg')
     +slide({header: "Не будь ленивым кодером", shout: true, classes: 'label-header captain'})
       p.captain-text.next
         span.subtitle Будь котиком!
+        img(src='pictures/coderun.png' style="position: absolute; bottom: -2px; left: 30%; width: 95px;")
       img.cover.width(src='pictures/cap.jpg')
     +slide({name: 'theend', header: "Вопросы?", shout: true, classes: 'cover label-header'})
       p.end-link
         a.bigger(href="https://neesoglasnaja.github.io/undefined-lazy" target="_blank") neesoglasnaja.github.io/undefined-lazy
         br
-        | Александра Шинкевич (
+        | Саша Шинкевич (
         a(href='https://twitter.com/neesoglasnaja' target="_blank") @neesoglasnaja
         | )
       +cover('pictures/cover.jpg')
